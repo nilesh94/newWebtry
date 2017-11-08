@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Bonds</h1>
+<form action="regassets.php?type=bonds" method="post">
+	Bond Name : <input type="text" name="bondname" placeholder="Name of the Bond" /><br>
+	Issuer Name : <input type="text" name="issuer" placeholder="Issuer Name"><br>
+	Principal Amount : <input type="text" name="principalamt" placeholder="Enter Amount" /><br>
+	Maturity : <input type="text" name="maturity" placeholder="No. of Months" /><br>
+	Coupon : <input type="text" name="coupon" placeholder="Enter the Interest Amount in %" /><br>
+	Market Price : <input type="text" name="market_price" placeholder="Market Price" /><br>
+	Bond Type :<select name="bond_type">
+		<option value="secured" default>Secured</option>
+		<option value="unsecured">Unsecured</option>
+		<option value="mortgage">Mortgage</option>
+	</select><br>
+	Number of Bonds : <input type="text" name="quantity"><br>
+	<input type="submit" value="Submit" />
+</form>
+</body>
+</html>
